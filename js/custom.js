@@ -1,4 +1,4 @@
-;
+
 (function($, window, document, undefined) {
     'use strict';
     var $winW = function() {
