@@ -644,10 +644,13 @@ a#logo {
 }
 .portfolio-item:hover .thumb-inner h4 {
    margin-top: 30%;
-  color: #1e1e1e;
+  color: blue;
   margin-bottom: 20px;
 }
 
+.portfolio-item:hover .thumb-inner a{
+  color: red;
+}
 /*==============================================
 08. CONTACT BLOCK CSS
 ================================================*/
@@ -733,11 +736,11 @@ a#logo {
   opacity:0.7;
 }
 textarea.form-control {
-  height:123px;
+  height:100px;
   padding-top:15px;
 }
 .contact-section .btn {
-  width:100%;
+  width:30%;
 }
 .contact-box {
   text-align:left;
@@ -762,10 +765,10 @@ textarea.form-control {
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
   background: rgba(250,250,250,0.25);
   border-radius: 10px;
-  padding: 30px;
+  padding: 20px;
   font-weight: 700;
 }
 .contact-row i {
@@ -774,7 +777,7 @@ textarea.form-control {
   display:block;
 }
 .contact-row i.fa-envelope {
-  font-size: 25px;
+  font-size: 20px;
 }
 
 /*==============================================
@@ -809,22 +812,22 @@ textarea.form-control {
 }
 .skill-item {
   border-bottom: 1px solid rgba(250,250,250,0.1);
-  margin-bottom: 50px;
-  padding-bottom: 50px;
+  margin-bottom: 20px;
+  padding-bottom: 30px;
 }
 .last-skill {
   border-bottom: none;
 }
 .skills-row span {
   display: inline-block;
-  width: 50px;
-  height: 50px;
+  width: 43px;
+  height: 43px;
   text-align: center;
   line-height: 50px;
   background-color: #fff;
   color: #1e1e1e;
   border-radius: 50%;
-  font-size: 16px;
+  font-size: 0.8em;
   font-weight: 700;
   left: 0;
   top: -21px;
@@ -832,7 +835,7 @@ textarea.form-control {
   z-index: 999;
 }
 .skills-row h6 {
-  font-size: 16px;
+  font-size: 0.8em;
   text-transform: uppercase;
   font-weight: 700;
   color: #fff;
@@ -840,7 +843,7 @@ textarea.form-control {
   margin-bottom: -10px;
 }
 .skill-bar {
-  width: 57%;
+  width: auto;
   height: 6px;
   border-radius: 3px;
   background-color: rgba(250,250,250,0.25);
