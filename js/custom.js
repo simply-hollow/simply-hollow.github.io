@@ -1,4 +1,3 @@
-
 (function($, window, document, undefined) {
     'use strict';
     var $winW = function() {
@@ -51,10 +50,10 @@
                 loop: true,
                 nav: false,
                 dots: true,
-                items: 3,
+                items: 5,
                 margin: 30,
-                autoplay: false,
-                smartSpeed: 700,
+                autoplay: true,
+                smartSpeed: 1000,
                 autoplayTimeout: 6000,
                 responsive: {
                     0: {
@@ -66,11 +65,11 @@
                         margin: 0
                     },
                     576: {
-                        items: 2,
+                        items: 3,
                         margin: 20
                     },
                     992: {
-                        items: 3,
+                        items: 4,
                         margin: 30
                     }
                 }
@@ -155,9 +154,9 @@
         if ($('.fullpage-default').length) {
             var myFullpage = new fullpage('.fullpage-default', {
                 licenseKey: ' C7F41B00-5E824594-9A5EFB99-B556A3D5',
-                anchors: ['slide01', 'slide02', 'slide03', 'slide04', 'slide05', 'slide06', 'slide07'],
+                anchors: ['slide01', 'slide02', 'slide03', 'slide04', 'slide05'],
                 menu: '#nav',
-                lazyLoad: true,
+                lazyLoad: false,
                 navigation: true,
                 navigationPosition: 'right',
                 scrollOverflow: true,
@@ -176,10 +175,10 @@
         });
         $('.facts-row').on('inview', function(event, isInView) {
             $('.count-number').each(function() {
-                $(this).prop('Counter', 0).animate({
+                $(this).prop('Counter',0).animate({
                     Counter: $(this).text()
                 }, {
-                    duration: 1000,
+                    duration: 2000,
                     easing: 'swing',
                     step: function(now) {
                         $(this).text(Math.ceil(now));
@@ -192,6 +191,14 @@
         });
         $('.skills-row').on('inview', function(event, isInView) {
             $(this).addClass('view');
+            //$(".progress-bar").each(function(){
+              //var percentage = parseInt($(this).text());
+              //if(percentage > 0){
+                //$(this).animate({'width':''+percentage+'%'}, 500);
+              //}else{
+                //$(this).css({'color':'black', 'background':'none'}, 500);
+              //}
+            //});
         });
         $(document).on('click', '.menu-trigger', function() {
             $('body').toggleClass('sidemenu-open');

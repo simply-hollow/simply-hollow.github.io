@@ -397,6 +397,11 @@ a#logo {
 /*==============================================
 04. WELCOME BLOCK CSS
 ================================================*/
+@font-face{
+  font-family: Arizonia;
+  src: url(../fonts/Arizonia-Regular.ttf);
+}
+
 .welcome-box {
   font-size:20px;
   line-height:1.7;
@@ -414,12 +419,14 @@ a#logo {
   width:100%;
   margin:0 auto 30px;
   color: #fff;
+  font-size: 1.5em;
 }
 .welcome-title {
   font-weight: 700;
   font-size: 120px;
   margin-bottom: 10px;
-  letter-spacing:0.02em;
+  letter-spacing:0.25em;
+  font-family: Arizonia;
 }
 .welcome-title span {
   font-size:36px;
@@ -456,7 +463,7 @@ a#logo {
 ================================================*/
 .about-img {
   margin: 0 auto 40px;
-  position:relative;
+  position:relative; 
 }
 .about-img img {
   border-radius: 10px;
@@ -464,7 +471,7 @@ a#logo {
   box-shadow: 0 0 40px rgba(0,0,0,.3);
 }
 .about-contentbox {
-  margin-top: 80px;
+  margin-top: 70px;
   text-align:left;
   line-height:1.8;
 }
@@ -833,7 +840,7 @@ textarea.form-control {
   margin-bottom: -10px;
 }
 .skill-bar {
-  width: 70%;
+  width: 57%;
   height: 6px;
   border-radius: 3px;
   background-color: rgba(250,250,250,0.25);
@@ -842,7 +849,7 @@ textarea.form-control {
 .filled-bar {
   position: absolute;
   z-index: 99;
-  width: 64%;
+  width: 90%; 
   height: 6px;
   background-color: #fff;
   border-radius: 3px;
@@ -850,14 +857,21 @@ textarea.form-control {
 .filled-bar-2 {
   position: absolute;
   z-index: 99;
-  width: 82%;
+  width: 70%;
   height: 6px;
   background-color: #fff;
   border-radius: 3px;
 }
 
-
-/* New Arrow Animation */
+.filled-bar-3 {
+  position: absolute;
+  z-index: 99;
+  width: 60%;
+  height: 6px;
+  background-color: #fff;
+  border-radius: 3px;
+}
+/* New Arrow-Down Animation */
 .arrow-down {
   animation: blinker 1s linear infinite;
 }
